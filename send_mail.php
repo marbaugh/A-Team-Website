@@ -15,9 +15,9 @@
 
     // Identify the mail server, username, password, and port
     $ateam_email = "ateamvaulting@gmail.com";
-    $server   = "ssl://smtp.gmail.com";
-    $username = $ateam_email;
-    $password = "ATeam_Rocks";
+    $server = "ssl://smtp.sendgrid.net";
+    $username = "marbaugh";
+    $password = "";
     $port     = "465";
 
     // Set up the request subject and mail headers
@@ -35,7 +35,7 @@
     $req_msg .= "Name: ".($customer_name)."\n";
     $req_msg .= "Email: ".($customer_email)."\n";
     $req_msg .= "Phone: ".($customer_phone)."\n";
-    $req_msg .= "When: ".($requested_date)." 6:30pm \n";
+    $req_msg .= "When: ".($requested_date)." 6:00pm \n";
     $req_msg .= "Comments: ".($comments)."\n";
 
     // Set up the confirmation subject and mail headers
